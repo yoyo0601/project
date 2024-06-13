@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandora</title>
+    <!-- ==================================字體================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <!-- ===================================================================== -->
+    <!-- ==============================Bootstrap================================ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <!-- ======================================================================== -->
+    <script src="https://kit.fontawesome.com/65cc1998d9.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/styles01.css">
+</head>
+
+<body style="background-image: url(./img/bk12.jpg);">
+
+
+    <!-- 頁首========================================================================= -->
+    <header class=" potta-one-regular">
+
+        <h1>
+            <a href="./index.html"> Pandora</a>
+            <nav class="float-right">
+                <a href="https://www.facebook.com/camacafe/?locale=zh_TW" target="_blank"><i
+                        class="fa-brands fa-facebook social-icon "></i></a>
+                <a href="https://www.youtube.com/channel/UCQQU984-ZStyys9bv9Sh09g social-icon" target="_blank"><i
+                        class="fa-brands fa-youtube social-icon"></i></a>
+                <a href="./login.html"><i class="fa-sharp fa-solid fa-cart-shopping" target="_blank"></i></a>
+            </nav>
+        </h1>
+
+        <nav class="text-center">
+            <ul class="clearfix">
+                <li class="text-center"><a href="./index.html">首頁</a></li>
+                <li class="text-center"><a href="./about.html">關於我們</a></li>
+                <li class="text-center">
+                    <select onchange="location = this.value;">
+                        <option value="" selected>商品分類</option>
+                        <option value="girl.html">女性香水</option>
+                        <option value="boy.html">男性香水</option>
+
+                    </select>
+                </li>
+                <li class="text-center"><a href="./information.html">門市資訊</a></li>
+                <li class="text-center"><a href="./customer service.html">客服留言</a></li>
+                <li class="text-center"><a href="./login.html">會員登入</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-box text-end"> <!-- 使用 text-end 类将搜索框向右对齐 -->
+            <form class="d-flex">
+                <input class="form-control form-control-sm me-2" type="search" placeholder="搜尋商品" aria-label="Search">
+                <button class="btn btn-outline-light btn-sm" type="submit">搜尋</button>
+            </form>
+        </div>
+
+    </header>
+    <!-- ==麵包================================================================================== -->
+    <div class="breadcrumb">
+        <a href="./index.html">首頁</a> >
+        <span class="">男性香水</span>
+    </div>
+
+   <h3 style="width: auto;">男性香水</h3>
+    <p><a class="no-link-style" href="./girl.html">女性香水</a></p>
+
+
+
+
+
+
+    <!--========================================================== 內容 =============================================-->
+    <h4 class="text-center potta-one-regular text-center ">SAUVAGE 曠野之心</h4>
+    <div class="container">
+        <div class="row justify-content-center g-0">
+            <!-- 第一列 -->
+            <div class="col-md-3 text-center product">
+                <img src="./img/boy01.jpg" alt="Image 1" class="img-fluid">
+
+                <p class="image-description potta-one-regular">曠野之心淡香水</p>
+                <p class="product-price potta-one-regular">NT$2700</p>
+                <button onclick="
+                    cart.productNum++;
+                    cart.prodcut1.num++;
+                    cart.totalPrice += 2700;
+                    saveCart();
+                    updateCart();
+                ">加入購物車</button>
+            </div>
+            <!-- 第二列 -->
+            <div class="col-md-3 text-center product">
+                <img src="./img/boy02.jpg" alt="Image 2" class="img-fluid">
+
+                <p class="image-description potta-one-regular">曠野之心香氛</p>
+                <p class="product-price potta-one-regular">NT$3850</p>
+                <button onclick="
+                    cart.productNum++;
+                    cart.prodcut1.num++;
+                    cart.totalPrice += 3850;
+                    saveCart();
+                    updateCart();
+                ">加入購物車</button>
+            </div>
+            <!-- 第三列 -->
+            <div class="col-md-3 text-center product">
+                <img src="./img/boy3.jpg" alt="Image 3" class="img-fluid">
+
+                <p class="image-description potta-one-regular">曠野之心淬鍊香精</p>
+                <p class="product-price potta-one-regular">NT$5600</p>
+                <button onclick="
+                    cart.productNum++;
+                    cart.prodcut1.num++;
+                    cart.totalPrice += 5600;
+                    saveCart();
+                    updateCart();
+                ">加入購物車</button>
+            </div>
+            <!-- 第四列 -->
+            <div class="col-md-3 text-center product">
+                <img src="./img/boy04.jpg" alt="Image 4" class="img-fluid">
+
+                <p class="image-description potta-one-regular">迪奧曠野之心保濕精華</p>
+                <p class="product-price potta-one-regular">NT$3600</p>
+                <button onclick="
+                    cart.productNum++;
+                    cart.prodcut1.num++;
+                    cart.totalPrice += 3600;
+                    saveCart();
+                    updateCart();
+                ">加入購物車</button>
+            </div>
+            <hr>
+        </div>
+
+    </div>
+    <h4 class="text-center potta-one-regular text-center ">DIOR HOMME</h4>
+    <div class="container">
+        <div class="row justify-content-center g-0">
+            <!-- 第一列 -->
+            <div class="col-md-3 text-center product">
+                <img src="./img/boy05.jpg" alt="Image 1" class="img-fluid">
+
+                <p class="image-description potta-one-regular">Dior Homme Sport</p>
+                <p class="product-price potta-one-regular">NT$2700</p>
+                <button onclick="
+                    cart.productNum++;
+                    cart.prodcut1.num++;
+                    cart.totalPrice += 2700;
+                    saveCart();
+                    updateCart();
+                ">加入購物車</button>
+            </div>
+            <!-- 第二列 -->
+            <div class="col-md-3 text-center product">
+                <img src="./img/boy06.jpg" alt="Image 2" class="img-fluid">
+
+                <p class="image-description potta-one-regular">Dior Homme Cologne</p>
+                <p class="product-price potta-one-regular">NT$3550</p>
+                <button onclick="
+                    cart.productNum++;
+                    cart.prodcut1.num++;
+                    cart.totalPrice += 3550;
+                    saveCart();
+                    updateCart();
+                ">加入購物車</button>
+            </div>
+            <!-- 第三列 -->
+            <div class="col-md-3 text-center product">
+                <img src="./img/boy07.jpg" alt="Image 3" class="img-fluid">
+
+                <p class="image-description potta-one-regular">曠野之心淬鍊香精</p>
+                <p class="product-price potta-one-regular">NT$5600</p>
+                <button onclick="
+                    cart.productNum++;
+                    cart.prodcut1.num++;
+                    cart.totalPrice += 5600;
+                    saveCart();
+                    updateCart();
+                ">加入購物車</button>
+            </div>
+            <!-- 第四列 -->
+            <div class="col-md-3 text-center">
+
+
+                <p class="image-description potta-one-regular"></p>
+                <p class="product-price potta-one-regular"></p>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <h4 class="text-center potta-one-regular text-center ">DUNE POUR HOMME</h4>
+    <div class="container">
+        <div class="row justify-content-center g-0">
+            <!-- 第一列 -->
+            <div class="col-md-3 text-center product">
+                <img src="./img/boy08.jpg" alt="Image 1" class="img-fluid">
+
+                <p class="image-description potta-one-regular"> POUR HOMME淡香水</p>
+                <p class="product-price potta-one-regular">NT$4300</p>
+                <button onclick="
+                    cart.productNum++;
+                    cart.prodcut1.num++;
+                    cart.totalPrice += 4300;
+                    saveCart();
+                    updateCart();
+                ">加入購物車</button>
+            </div>
+            <!-- 第二列 -->
+            <div class="col-md-3 text-center product">
+                <img src="./img/boy09.jpg" alt="Image 2" class="img-fluid">
+                <p class="image-description potta-one-regular">Dune淡香水</p>
+                <p class="product-price potta-one-regular">NT$5500</p>
+                <button onclick="
+                    cart.productNum++;
+                    cart.prodcut1.num++;
+                    cart.totalPrice += 5500;
+                    saveCart();
+                    updateCart();
+
+                ">加入購物車</button>
+            </div>
+            <!-- 第三列 -->
+            <div class="col-md-3 text-center ">
+
+
+                <p class="image-description potta-one-regular"></p>
+                <p class="product-price potta-one-regular"></p>
+            </div>
+            <!-- 第四列 -->
+            <div class="col-md-3 text-center">
+
+
+                <p class="image-description potta-one-regular"></p>
+                <p class="product-price potta-one-regular"></p>
+            </div>
+        </div>
+
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        var mybutton = document.getElementById("myBtn");
+
+        // 当页面滚动时
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            // 如果页面滚动超过100像素，显示按钮
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                mybutton.style.display = "block";
+            } else {
+                // 否则，隐藏按钮
+                mybutton.style.display = "none";
+            }
+        }
+
+
+        // 当用户点击按钮时，将页面滚动到顶部
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+
+    </script>
+        <div class="container"  >
+            <button   onclick="
+       cart.productNum = 0;
+       cart.prodcut1.num = 0;
+       cart.prodcut2.num = 0;
+       cart.totalPrice = 0;
+       console.log('已清空購物車');
+       localStorage.removeItem('cart');
+       updateCart();
+    ">清空購物車</button>
+        <p class="cart container">
+                
+        </p>
+    
+    
+       </div>
+
+        
+
+
+
+
+
+
+    <script>
+        function updateCart() {
+            document.querySelector(".cart").innerHTML = `
+            目前商品數 : ${cart.productNum} <br>
+            
+            目前購物車總額 : ${cart.totalPrice} <br>
+        `
+        }
+
+        function saveCart() {
+            const jsonCart = JSON.stringify(cart);
+            localStorage.setItem("cart", jsonCart);
+        }
+
+        let cart = JSON.parse(localStorage.getItem("cart"));
+
+        if (!cart) {
+            cart = {
+                productNum: 0,
+                prodcut1: {
+                    num: 0,
+                    price: 100
+                },
+                prodcut2: {
+                    num: 0,
+                    price: 200
+                },
+                totalPrice: 0
+            };
+        }
+
+        updateCart();
+
+    </script>
+    <script>
+        const myButton = document.getElementById('myButton');
+
+// 添加點擊事件處理器
+myButton.addEventListener('click', function() {
+  // 在這裡可以添加點擊時的效果，例如改變按鈕的顏色、大小或者播放動畫等
+  // 這裡只是一個簡單的例子，你可以根據需求自行擴展
+  myButton.style.backgroundColor = '#ff6347'; // 改變按鈕的背景顏色
+});
+    </script>
+
+    <!--  聯絡================================================================================-->
+    <div class="container">
+        <div class="row d-flex justify-content-between"></div>
+        <hr>
+        <div class="container about-section">
+            <div class="about-info">
+                <p>聯絡我們</p>
+                <div>
+                    聯絡電話|0912345678
+                    <br>
+                    營業時間|週一~週五 0900:1800
+                    <br>
+                    門市地址|台中市西屯區西屯路二段000號
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/?locale=zh_TW" target="_blank"><i
+                            class="fa-brands fa-facebook social-icon"></i></a>
+                    <a href="https://www.youtube.com/channel/UCQQU984-ZStyys9bv9Sh09g social-icon" target="_blank"><i
+                            class="fa-brands fa-youtube social-icon"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="tel:0912345678"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!--  頁尾=================================================================================================-->
+    <footer>
+        <p class="container">
+            僅作為作業練習使用 請勿作為商業用途.
+            <br>
+            Copyright © All rights reserved.ABC123
+        </p>
+    </footer>
+
+</body>
+
+</html>

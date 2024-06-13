@@ -1,0 +1,304 @@
+/* 全局样式 */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* 頁首 */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(20, 13, 20, 0.5);
+    padding: 10px 40px;
+    text-align: center;
+    z-index: 2;
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+header:hover {
+    background-color: rgba(20, 13, 20, 0.8); /* 鼠标悬停时改变背景颜色 */
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+
+}
+
+h2 {
+    width: 100%;
+    color: red;
+
+}
+
+h2.text-center {
+
+    padding: 20px;
+    /* 添加一些内边距 */
+}
+
+header h1 {
+    margin-left: 170px;
+
+}
+
+header h1 a {
+    color: white;
+    /* 更改链接颜色 */
+    text-decoration: none;
+    /* 移除下划线 */
+}
+
+header h1 a:hover {
+    color: white;
+    /* 鼠标悬停时更改颜色 */
+}
+
+/* ========================================== */
+/*               欄位數  排版使用              */
+/* ========================================= */
+/* 單欄 */
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+    padding: 10px;
+}
+
+.col-1 {
+    width: 8.333%;
+}
+
+.col-2 {
+    width: 16.666%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.666%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.333%;
+}
+
+.col-8 {
+    width: 66.6666%
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.333%;
+}
+
+.col-11 {
+    width: 91.6666%;
+}
+
+.col-12 {
+    width: 100%;
+    padding: 10px;
+}
+
+.image-description {
+    font-size: 20px;
+    bottom: 10px;
+    /* 距离容器底部的距离 */
+    left: 0;
+    /* 从容器左侧对齐 */
+    width: 100%;
+    /* 宽度填满容器 */
+    margin: 0;
+    /* 移除默认的外边距 */
+    color: rgb(114, 189, 236);
+    /* 文字颜色 */
+    padding: 5px;
+    /* 文字内边距 */
+}
+
+.product-price {
+    font-size: 18px;
+    margin: 0;
+    /* 去除商品价格的外边距 */
+    font-weight: bold;
+    /* 商品价格加粗 */
+    color: #FF0000;
+    /* 商品价格颜色，这里使用红色 */
+}
+
+
+
+
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 0px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease; /* 添加过渡效果 */
+   
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+.search-box {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+}
+
+.search-box .btn {
+    min-width: 100px;
+}
+
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    /* 水平居中对齐 */
+}
+
+
+/* 輪播圖 */
+.carousel-caption {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    margin-right: 200px;
+    left: auto;
+}
+
+.carousel-caption h5 {
+    font-size: 60px;
+    color: white;
+}
+
+.potta-one-regular {
+    font-family: "Potta One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+.about-section {
+    text-align: center; /* 将整体居中 */
+    background-color: rgb(202, 199, 199);
+}
+
+.about-info {
+    display: inline-block; /* 让 div 的宽度根据内容自动调整 */
+    text-align: left; /* 文字左对齐 */
+    
+}
+
+
+/* 頁腳 */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    padding: 10px; /*上右下左*/
+}
+
+.container {
+    max-width: 1170px;
+    width: 80%;
+    margin: auto;/*在不同裝置下都可以置中*/   
+    
+}
+select {
+    /* 添加自定义背景颜色 */
+    background-color:  rgba(20, 13, 20, 0.5);
+
+    /* 添加自定义边框圆角 */
+    border-radius: 4px;
+    /* 添加自定义内边距 */
+    padding: 6px 12px;
+    /* 添加自定义字体大小 */
+    font-size: 14px;
+    /* 添加自定义宽度 */
+    width: 150px;
+    /* 添加自定义颜色 */
+    color: white;
+    /* 添加自定义光标样式 */
+    cursor: pointer;
+}
+
+/* 自定义选项样式 */
+option {
+    /* 添加自定义背景颜色 */
+    background-color:  white;
+    /* 添加自定义字体颜色 */
+    color: #495057;
+}
+
+
+#myBtn {
+    display: none; /* 默认情况下隐藏按钮 */
+    position: fixed; /* 固定在页面上的位置 */
+    bottom: 20px; /* 距离底部20像素 */
+    right: 30px; /* 距离右侧30像素 */
+    z-index: 99; /* 设置在其他内容之上 */
+    border: none; /* 移除按钮边框 */
+    outline: none; /* 移除按钮轮廓 */
+    background-color: red; /* 背景颜色 */
+    color: white; /* 文本颜色 */
+    cursor: pointer; /* 鼠标悬停时显示指针 */
+    padding: 15px; /* 按钮内边距 */
+    border-radius: 10px; /* 按钮圆角 */
+  }
+  
+  #myBtn:hover {
+    background-color: darkred; /* 鼠标悬停时的背景颜色 */
+  }
+
+
+
+
+
+
+

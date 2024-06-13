@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandora</title>
+    <!-- ==================================字體================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    <!-- ===================================================================== -->
+    <!-- ==============================Bootstrap================================ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js"
+        integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK"
+        crossorigin="anonymous"></script>
+    <!-- ======================================================================== -->
+    <script src="https://kit.fontawesome.com/65cc1998d9.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/styles01.css">
+    <style>
+        /* 添加样式来处理星号 */
+        span.required::after {
+            content: "*";
+            color: red;
+        }
+    </style>
+</head>
+
+<body style="background-image:url('./img/bk14.jpg') ;">
+
+
+    <!-- 頁首========================================================================= -->
+    <header class=" potta-one-regular">
+
+        <h1>
+            <a href="./index.html"> Pandora</a>
+            <nav class="float-right">
+                <a href="https://www.facebook.com/camacafe/?locale=zh_TW" target="_blank"><i
+                        class="fa-brands fa-facebook social-icon "></i></a>
+                <a href="https://www.youtube.com/channel/UCQQU984-ZStyys9bv9Sh09g social-icon" target="_blank"><i
+                        class="fa-brands fa-youtube social-icon"></i></a>
+                <a href="./login.html"><i class="fa-sharp fa-solid fa-cart-shopping" target="_blank"></i></a>
+        </h1>
+
+        <nav class="text-center">
+            <ul class="clearfix">
+                <li class="text-center"><a href="./index.html">首頁</a></li>
+                <li class="text-center"><a href="./about.html">關於我們</a></li>
+                <li class="text-center">
+                    <select onchange="location = this.value;">
+                        <option value="" selected>商品分類</option>
+                        <option value="girl.html">女性香水</option>
+                        <option value="boy.html">男性香水</option>
+                        
+                    </select>
+                </li>
+                <li class="text-center"><a href="./information.html">門市資訊</a></li>
+                <li class="text-center"><a href="./customer service.html">客服留言</a></li>
+                <li class="text-center"><a href="./login.html">會員登入</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-box text-end"> <!-- 使用 text-end 类将搜索框向右对齐 -->
+            <form class="d-flex">
+                <input class="form-control form-control-sm me-2" type="search" placeholder="搜尋商品" aria-label="Search">
+                <button class="btn btn-outline-light btn-sm" type="submit">搜尋</button>
+            </form>
+        </div>
+
+    </header>
+    <!-- ==麵包================================================================================== -->
+    <div class="breadcrumb">
+        <a href="./index.html">首頁</a> >
+        <span class="">客服留言</span>
+    </div>
+    <h3>客服留言</h3>
+    <!--========================================================== 內容 =============================================-->
+    <div style="font-style: italic;" class="text-center container">
+        <h2 style="color: red;">感謝您對我們的關注！</h2>
+        <h4>您如果對於我們有任何的服務、朝聘、內容有任何疑問，請隨時與我們聯繫</h4>
+        <h4>確認您的諮詢後，會有專人與您聯絡！(*為必填項目)</h4>
+
+        <div style="font-size: 20px;  font-weight: bold" class="container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="question">疑問分類<span class="required"></span></label>
+                    <span>
+                        <select class="form-control" id="question">
+                            <option value="">請選擇疑問分類</option>
+                            <option value="product">服務內容</option>
+                            <option value="service">朝聘資訊</option>
+                            <option value="other">其他</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="name">姓名<span class="required"></span></label>
+                    <span>
+                        <input type="text" class="form-control" id="name" placeholder="請輸入姓名">
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="phone">電話<span class="required"></span></label>
+                    <span>
+                        <input type="tel" class="form-control" id="phone" placeholder="請輸入電話">
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="address">地址<span class="required"></span></label>
+                    <span>
+                        <input type="text" class="form-control" id="address" placeholder="請輸入地址">
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email<span class="required"></span></label>
+                    <span>
+                        <input type="email" class="form-control" id="email" placeholder="請輸入Email">
+                    </span>
+                </div>
+                <div class="form-group">
+                    <label for="message">内容<span class="required"></span></label>
+                    <span>
+                        <textarea class="form-control" id="message" rows="5" placeholder="請輸入內容"></textarea>
+                    </span>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">提交留言</button>
+            </form>
+        </div>
+
+        <!-- 引入 Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script>
+            document.getElementById('contactForm').addEventListener('submit', function (event) {
+                event.preventDefault(); // 阻止表单默认提交行为
+
+                // 检查是否有未填写的必填字段
+                var name = document.getElementById('name').value;
+                var phone = document.getElementById('phone').value;
+                var address = document.getElementById('address').value;
+                var email = document.getElementById('email').value;
+                var message = document.getElementById('message').value;
+                var question = document.getElementById('question').value;
+
+                if (name === '' || phone === '' || address === '' || email === '' || message === '' || question === '') {
+                    alert('请填写所有必填字段！');
+                    return;
+                }
+
+                // 如果所有字段都填写了，则显示提交成功的对话框
+                alert('留言提交成功！');
+                // 这里可以添加其他提交成功后的操作，例如重置表单或跳转到其他页面
+                // document.getElementById('contactForm').reset();
+            });
+        </script>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+    var mybutton = document.getElementById("myBtn");
+
+    // 当页面滚动时
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+        // 如果页面滚动超过100像素，显示按钮
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            mybutton.style.display = "block";
+        } else {
+            // 否则，隐藏按钮
+            mybutton.style.display = "none";
+        }
+    }
+
+    // 当用户点击按钮时，将页面滚动到顶部
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+</script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--  聯絡================================================================================-->
+    <div class="container">
+        <div class="row d-flex justify-content-between">
+
+        </div>
+        <hr>
+        <div class="container about-section">
+            <div class="about-info">
+                <p>聯絡我們</p>
+                <div>
+                    聯絡電話|0912345678
+                    <br>
+                    營業時間|週一~週五 0900:1800
+                    <br>
+                    門市地址|台中市西屯區西屯路二段000號
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/?locale=zh_TW" target="_blank"><i
+                            class="fa-brands fa-facebook social-icon"></i></a>
+                    <a href="https://www.youtube.com/channel/UCQQU984-ZStyys9bv9Sh09g social-icon" target="_blank"><i
+                            class="fa-brands fa-youtube social-icon"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="tel:0912345678"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+    </div>
+    <!--  頁尾=================================================================================================-->
+    <footer>
+        <p class="container"> <!-- &bsnp; HTML特殊字元 -->
+            僅作為作業練習使用 請勿作為商業用途.
+            <br>
+            Copyright © All rights reserved.ABC123
+        </p>
+    </footer>
+
+
+
+
+</body>
+
+</html> 
